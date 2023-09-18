@@ -1,0 +1,11 @@
+# Threads mit Interface
+
+## Nachteil bei dem Erben von Threads
+Bei der bisherigen Erstellung eines Threads mit Vererbung ist der Nachteil, dass nicht vom anderen Klassen geerbt werden kann.
+
+## Vorteil bei dem Erben von Threads
+Verwaltungsmethoden für Threads sind beim Erben automatisch verfügbar.
+
+## Übung wie in Ordner "1 Threads Erzeugen"
+1. Erstellen der Klassen `ErzeugeThread.java` und `MyThrad.java`.
+2

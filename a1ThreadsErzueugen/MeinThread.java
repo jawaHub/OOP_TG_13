@@ -1,13 +1,14 @@
+package a1ThreadsErzueugen;
 /**
  * MyThread
  */
 
-public class MyThread extends Thread {
+public class MeinThread extends Thread {
     // Obhjektvariablen
     String name;
     int wait;
 
-    public MyThread(String name, int wait) {
+    public MeinThread(String name, int wait) {
         this.name = name;
         this.wait = wait;
     }

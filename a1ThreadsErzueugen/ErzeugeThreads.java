@@ -1,3 +1,4 @@
+package a1ThreadsErzueugen;
 /**
  * ErzeugeThreads
  */
@@ -7,8 +8,8 @@ public class ErzeugeThreads {
         System.out.println("Erzeuge Thread gestartet");
 
         // Objekte erzeugen
-        MyThread x = new MyThread("x", 100);
-        MyThread y = new MyThread("y", 10);
+        MeinThread x = new MeinThread("x", 100);
+        MeinThread y = new MeinThread("y", 10);
 
         // Threads starten
         x.start();
