@@ -1,0 +1,21 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>50</x><y>450</y><w>130</w><h>70</h></coordinates><panel_attributes>ErzeugeThreads
+--
+
+--
+_+main(args:String)_
+bg=light_gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>220</y><w>200</w><h>120</h></coordinates><panel_attributes>MyThread
+--
+name:String
+wait:int
+--
++MyThread(name:String, wait:int)
++run()
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>20</y><w>130</w><h>100</h></coordinates><panel_attributes>Thread
+--
+
+--
++run()
++start()
+_+sleep(warteZeit:int)_
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>110</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>330</y><w>70</w><h>140</h></coordinates><panel_attributes>lt=.&gt;
+erzeugt</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element></diagram>

@@ -2,17 +2,17 @@
  * MyThread
  */
 
-public class MyThread extends Thread{    
-    //Obhjektvariablen
+public class MyThread extends Thread {
+    // Obhjektvariablen
     String name;
     int wait;
-    
-    public MyThread(String name, int wait){
+
+    public MyThread(String name, int wait) {
         this.name = name;
         this.wait = wait;
     }
-    
-    //run Methode erzeugen
+
+    // run Methode erzeugen
     @Override
     public void run() {
         System.out.println("Name: " + name + " gestartet");
