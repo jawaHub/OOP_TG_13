@@ -1,0 +1,23 @@
+# Ampel mit Threads
+
+## Zustände
+
+### Definition:
+Die Nummerierung wird als Zustandsvariable umgestezt (Konstante). Der Wechsel der Zustände wurd über switch-while Idiom gelöst. Jede Ampel läuft in einem nebenläufigen Thread mit dem Interface Runnable.
+0. Rot
+1. Rot-Gelb
+2. Grün
+3. Gelb
+
+## Benötigte Klassen
+- ausführabe Klasse `StarteAmpel.java`
+- Klasse `Ampel.java`
+
+## Beschreibung
+- Nach starten einer Ampel ist der Zustand Rot. 
+- Wait definiert die Wartezeit der Zustände
+
+## Testzenario
+- Es werden zwei Ampel gestartet. 
+- Es erfolgt die Ausgabe des Namens der Ampel mit zugehörigem Zustand.
+- Eine gestartete Ampel läuft endlos weiter.
