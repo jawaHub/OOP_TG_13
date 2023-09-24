@@ -24,8 +24,6 @@ public class MeinThread implements Runnable {
                 e.printStackTrace();
             }
         }
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'run'");
     }
     
     public void start(){

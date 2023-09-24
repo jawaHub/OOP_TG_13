@@ -1,8 +1,8 @@
 # Thread erzeugen
 
 ## Aufgabe
-1. Erzeugen sie die Java Dateien `ErzeugeThread.java` und `MyThread`.
-2. Fügen sie eine main-Methode in die Klasse `ErzeugeThread`.
+1. Erzeugen Sie die Java Dateien `ErzeugeThread.java` und `MyThread`.
+2. Fügen Sie eine main-Methode in die Klasse `ErzeugeThread`.
 ````java
 public class ErzeugeThreads {
     public static void main(String[] args) {

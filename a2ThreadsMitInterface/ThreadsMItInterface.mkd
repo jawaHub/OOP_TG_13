@@ -8,4 +8,24 @@ Verwaltungsmethoden für Threads sind beim Erben automatisch verfügbar.
 
 ## Übung wie in Ordner "1 Threads Erzeugen"
 1. Erstellen der Klassen `ErzeugeThread.java` und `MyThrad.java`.
-2
+2. Fügen Sie eine main-Methode in die Klasse `ErzeugeThreads.java`.
+3. Die Klasse MeinThread soll das Interface `Runnable` implementieren.
+````java
+public class MeinThread implements Runnable {}
+````
+4. Beim Erzeugen eines Threads soll die Wartezeit und der Name festgeleget sein. -> Konstruktor
+````java
+public class MyThread implements Runnable{
+    String name;
+    int wait;
+    Thread t;
+    
+    public MyThread(String name, int wait){
+        this.name = name;
+        this.wait = wait;
+        t = new Thread(this);
+    }
+}
+````
+
+5. Rest, wie in Ordner "1 Threads Erzeugen".
