@@ -1,0 +1,42 @@
+# Threads mit Interrupt
+
+## Was anders ist
+1. Man braucht in der Klasse `MeinThread.java` (erbt von Runnable), die Methode interrupt()
+````java
+public void intrrupt(){}
+``
+2. Diese Klasse ruft die Methode interrupt() auf´
+`````java
+public void interrupt(){
+    thread.interrupt();
+}
+````
+3. Dann muss man in dem Try-Chatch Block, in der Exception das interrupted Flag erneut setzten (wird sofort wieder beim Auslösen der Exception gelöscht und man kann es nicht später überprüfen). Dann kann man das Interrupted Flag überprüfen und gegebenenfalls, den Thread zuende laufen lassen.
+````java
+Thread thread = new Thread(this);
+//Constructor, etc.
+public void run(){
+    while(true){
+        try{
+            Thread.sleep(100)
+        } catch(InterruptedException e){
+            e.printStackTrace;
+            thread.interrupt();
+        }
+        if(thread.isInterrupted) break;
+    }
+}
+````
+4. Optional kann man auch nur in der Interrupted Exception catch-Block ein "return" reinschreiben, um den Thread zu beenden.
+````java
+public void run(){
+    while(true){
+        try{
+            Thread.sleep(100);
+        } catch(InterruptedException e){
+            e.printStackTrace;
+            return;
+        }
+    }
+}
+````

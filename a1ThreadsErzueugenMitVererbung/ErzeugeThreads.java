@@ -1,4 +1,4 @@
-package a1ThreadsErzueugen;
+package a1ThreadsErzueugenMitVererbung;
 /**
  * ErzeugeThreads
  */
