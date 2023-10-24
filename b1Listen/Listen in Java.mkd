@@ -1,0 +1,69 @@
+## Array
+	- Ein Array ist eine Liste von Werten/Objekten mit einer festgelegten Anzahl
+	- Alle Werte und Objekte liegen im Spiecher beieinander-> kann schnell durchlaufen werden
+
+### Codebeispiel
+
+````java
+//erstellen eines Arrays
+int[] primzahlen = new int[3];
+
+//Speichern von Werten in einem Array
+primzahlen[0] = 2;
+primzahlen[1] = 3;
+primzahlen[2] = 5;
+
+//Werte ändern/löschen des 3.Wertes
+primzahlen[2] = 0;
+
+//ausgabe
+for(int i = 0; i < primzahlen.lenght; i++){
+System.out.println(„Wert „ + i + „: „ + primzahlen[i])
+}
+````
+
+### Pseudocode Beispiel ForEach Schleife
+````java
+for(int i: primzahlen){
+    if(i==5) System.out.println("5 ist eine Primzahl)
+}
+````
+
+Pseudocode:
+FÜR alle i in Primzahlen
+  WENN i=5
+    AUSGABE "5 ist in Primzahl enthalten"
+  ENDE WENN
+ENDE FÜR
+
+## ArrayList
+- eine ArrayList ist eine dynamische Loste von Werten und oder Pbjekten
+- Intern wird die ArrayList mit einem Array abgeildet, welches immer genug freie Plätze vorhält. d.h.:
+- Es wird intern eine neue Array-Struktur aufgebaut, wenn die bestehende Liste bis zu einem bestimmte. Schwellenwert gefüllt ist.
+  -> Eine ArrayList ist ähnlich schnell im Zugriff wie ein Array.
+- eine ArrayList ist keine Queue und kein Stack.
+
+ ### Codebeispiel
+````java
+//Arraylist erstellen
+ArrayList<Integer>() primzahlen = new ArrayList<>();
+
+//Objekte hinzufügen
+primzahlen.add(2);
+primzahlen.add(3);
+primzahlen.add(5);
+
+//Liste ausgeben
+System.out.println(primzahlen);
+
+//Objekt entfernen
+primzahlen.remove(1); //remove Objekt an index 1
+
+//über Liste itarieren (schrittweise abarbeiten)
+for(int i : primzahlen){
+	System.put.println(i);
+}
+
+//prüfen, ob ein Wert in der Liste ist
+System.out.println(primzahlen.contains(5));
+````
