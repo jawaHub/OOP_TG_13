@@ -67,3 +67,51 @@ for(int i : primzahlen){
 //prüfen, ob ein Wert in der Liste ist
 System.out.println(primzahlen.contains(5));
 ````
+
+## LinkedList
+Die LinkedList ist eine doppelt vekettete Liste. D.h. jedes Element kennt seinen Vorgänger und Nachfolger. 
+Über den Namen der LinkedList greift man mit einem Zeiger auf das Erste Element der Liste zu. 
+Das letzte Element der Liste enthält den Wert "null".
+
+### Vorteile
+- es können beliebig viele Elemnete hinzugefügt werden und wieder entfernt werden
+- eine LinkedList kann auch als Stapel verwendet werden (Sie ist es nicht)
+
+### Nachteile
+- langsame Iterarion (z.B. beim Sortieren)
+
+### Codebeispiel
+````java
+//LinkedList erzeugen
+LinkedList<String>() sprachen = new LinkedList<>();
+
+//Werte hinzufügen
+sprachen.add("Englisch");
+sprachen.add("Deutsch");
+sprachen.add("Klingonisch");
+
+//Ausgabe
+System.out.println(sprachen);
+
+//entfernen von Objekten
+sprachen.remove(2);
+
+//über Liste interieren
+for(Object o : sprachen){
+	System.out.println(o);
+}
+
+//Liste als Queue (Stack, Stapel)
+sprachen.removeFirst();
+sprachen.removeLast();
+sprachen.addFirst("Spanisch");
+sprachen.addLast("Chinesisch");
+
+//Ausgabe
+System.out.println(sprachen);
+
+//was man noch so machen kann
+String str = sprachen.pop(); //neustes Element entfernen und verwenden
+String str2 = sprachen.pollLast(); //letztes Element entfernen und verwenden
+sprachen.push(str); //Element hinzufügen (am Anfang)
+````
