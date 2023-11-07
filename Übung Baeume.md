@@ -38,3 +38,9 @@ PostOrder
 - 1, 2, 8, 5, 17, 10, 9
 InOrder:
 - 1, 2, 5, 8, 9, 10, 17
+
+Löschen von Knoten:
+- Blattknoten und Elternknoten mit einem Kinderknoten können gelsöcht werden
+- Bei Knoten die zwei Kinder haben, gilt:
+  im rechten Teilbaum den linkesten Knoten (ist ein Blatt) wählen
+  oder im linken Teilbaum den rechtesten Knoten (ist ein Blatt) wählen
