@@ -10,10 +10,11 @@ public class Main {
         tree.insert(5);
         tree.insert(2);
         tree.insert(1);
-        tree.insert(0);
+        tree.insert(8);
 
         System.out.println("\33{H\033[2J");
         System.out.flush();
         System.out.println("Amount nodes: " + tree.getAmountNodes());
+        System.out.println("Levels: " + tree.getHight());
     }
 }
