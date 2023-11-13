@@ -38,9 +38,9 @@ FÜR alle i in Primzahlen
 ENDE FÜR
 
 ## ArrayList
-- eine ArrayList ist eine dynamische Loste von Werten und oder Pbjekten
+- eine ArrayList ist eine dynamische Liste von Werten und oder Objekten
 - Intern wird die ArrayList mit einem Array abgeildet, welches immer genug freie Plätze vorhält. d.h.:
-- Es wird intern eine neue Array-Struktur aufgebaut, wenn die bestehende Liste bis zu einem bestimmte. Schwellenwert gefüllt ist.
+- Es wird intern eine neue Array-Struktur aufgebaut, wenn die bestehende Liste bis zu einem bestimmten Schwellenwert gefüllt ist.
   -> Eine ArrayList ist ähnlich schnell im Zugriff wie ein Array.
 - eine ArrayList ist keine Queue und kein Stack.
 
