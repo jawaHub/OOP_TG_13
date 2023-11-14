@@ -1,7 +1,5 @@
 package c1Baeume;
 
-import java.util.ArrayList;
-
 public class Tree {
     Node rootNode = null;
 
