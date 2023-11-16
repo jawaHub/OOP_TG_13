@@ -44,3 +44,7 @@ Löschen von Knoten:
 - Bei Knoten die zwei Kinder haben, gilt:
   im rechten Teilbaum den linkesten Knoten (ist ein Blatt) wählen
   oder im linken Teilbaum den rechtesten Knoten (ist ein Blatt) wählen
+
+Zum Nachlesen:
+- https://www.happycoders.eu/de/algorithmen/binaerbaum-java/
+- https://www.happycoders.eu/de/algorithmen/binaerer-suchbaum-java/

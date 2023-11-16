@@ -1,0 +1,59 @@
+# Queue
+
+## Merksatz
+In einer Queue, z.B. einer Warteschlange bei einem Drucker, werden die Werte hinten angefügt und vorne entnommen. Es herrst das Prinzip: FiFo -> First in First out. also, die Werte, die zu erst eingefügt werden, werden auc zuerst abgearbeitet.
+
+## Klassen
+### Elements
+````python
+Klasse Element
+    current:Text
+    next:Element
+
+    OPERATION Element(s:Text) der Klasse Element
+        current <- s
+    
+ENDE Klasse
+````
+
+### Queue
+````python
+Klasse Queue
+    first:Element
+
+    OPEARTION pop():Text in der Klasse Queue
+        WENN first == NULL
+            RÜCKGABE NULL 
+        ENDE WENN
+        ANSONSTEN
+            ret:Text
+            ret <- first.next
+            iterator:Element
+            iterator <- first
+            RÜCKGABE ret
+
+    OPERATION push(s:Text) der Klasse Queue
+        current <- s
+ENDE Klasse
+````
+
+### Main
+````python
+Klasse Main
+    OPEARION main(args <- NEU Liste<Text>()) der Klasse Main
+        q:Queue
+        q.push("Ich ")
+        q.push("esse ")
+        q.push("gerne ")
+        q.push("Pommes ")
+        q.push("mit ")
+        q.push("Schnitzel")
+        q.push(".")
+        ausgabe(q.toString())
+        p.pop()
+        p.pop()
+        p.pop()
+        ausagbe(q.toString())
+    ENDE Methode
+ENDE Klasse
+````
