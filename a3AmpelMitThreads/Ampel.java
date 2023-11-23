@@ -32,9 +32,8 @@ public class Ampel implements Runnable {
     // Wartefunktion
     public void warte() {
         try {
-            t.sleep(wait);
+            Thread.sleep(wait);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

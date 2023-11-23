@@ -1,5 +1,4 @@
 import java.text.Collator;
-import java.util.AbstractQueue;
 import java.util.LinkedList;
 import java.util.Scanner;
 

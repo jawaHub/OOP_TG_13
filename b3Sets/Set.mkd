@@ -1,0 +1,67 @@
+# Sets
+## Was ist ein Set?
+Ein Set ist eine Collection, in der es unmöglich ist, doppelte Elemente hinzuzufügen.
+
+## Implementierung
+Am schnellsten (keien Garantie der perfekten Sortierung):
+```java
+Set<Integer> name = new HashSet<>();
+```
+Perfekt sortiert + Methoden des SortedSetInterfaces (ist aber langsam):
+```java
+Set<Integer> name = new TreeSet<>();
+```
+Ist quasi etwas zwischen `HashSet` und `TreeSet`:
+```java
+Set<Integer> name = new LinkedHashSet<>();
+```s
+## Methoden
+Elemente hizufügen: 
+```java
+name.add("Anna")
+```
+Größe des Sets: 
+```java
+name.size()
+```
+Element suchen: 
+```java
+name.contains("Paul")
+```
+Element löschen:
+```java
+name.remove("Herbert")
+```
+Zwei Sets verbinden (dabei werden doppelte Elemente zusammengeführt): 
+```java
+Set<Integer> erstesSet = new HashSet<>();
+Set<Integer> zweitesSet = new HashSet<>();
+Set<String> union = new HashSet<Integer>(erstesSet)
+union.addAll(zweitesSet);
+```
+Gemeinsame Elemente von zwei Sets überprüfen:
+```java
+Set<Integer> erstesSet = new HashSet<>();
+Set<Integer> zweitesSet = new HashSet<>();
+Set<String> schnittmenge = new HashSet<Integer>(erstesSet)
+schnittmenge.retainAll(zweitesSet);
+```
+Differenz zweier Sets ermitteln:
+```java
+Set<Integer> erstesSet = new HashSet<>();
+Set<Integer> zweitesSet = new HashSet<>();
+Set<String> differenz = new HashSet<Integer>(erstesSet)
+differenz.removeAll(zweitesSet);
+```
+Über ein Set iterieren:
+```java
+Set<Integer> erstesSet = new HashSet<>();
+Iterator values = erstesSet.iterator();
+while (values.hasNext()) {
+    System.out.println(values.nex());
+}
+```
+
+für weitere Infos:
+[Oracle Docs](https://docs.oracle.com/javase/tutorial/collections/implementations/set.html)
+&  [Codegree](https://codegree.de/java-set-der-grosse-guide/)
