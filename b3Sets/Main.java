@@ -24,6 +24,5 @@ public class Main {
         while (a.hasNext()) {
             System.out.println(a.next());
         }
-    
     }
 }

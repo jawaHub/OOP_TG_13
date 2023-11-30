@@ -1,0 +1,21 @@
+# Maps in Java
+
+## Was ist eine Map?
+In einer Map können Werte gespeichert werden. Dabei hat jeder Wert einen Schlüssel, mit dem dieser gefunden werden kann. Es darf jeden Schlüssel nur einmal pro Map geben.
+Ebenso gibt es verschidene Arten von Maps. Bei z.B. einer  `TreeMap` oder einer `LinkedHashMap`, ist die Iteration aller Werte vorherbestimmt. Bei z.B. `HashMap` ist dies nicht der Fall.
+
+## Implementierung
+```java
+Map<Objekt, Objekt> map = new HashMap<Objekt, Objekt>();
+// Schlüssel, Wert
+```
+
+## Methoden
+```java
+Map<Integer, String> namen = new HashMap<Integer, Strting>();
+
+// Map leeren
+namen.clear();
+
+
+```

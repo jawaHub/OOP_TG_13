@@ -14,7 +14,7 @@ Set<Integer> name = new TreeSet<>();
 Ist quasi etwas zwischen `HashSet` und `TreeSet`:
 ```java
 Set<Integer> name = new LinkedHashSet<>();
-```s
+```
 ## Methoden
 Elemente hizufügen: 
 ```java
