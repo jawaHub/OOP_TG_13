@@ -17,5 +17,6 @@ Map<Integer, String> namen = new HashMap<Integer, Strting>();
 // Map leeren
 namen.clear();
 
-
 ```
+
+zum nachlesen: [Scalingbits](http://www.scalingbits.com/java/javakurs2/programmieren2/collection/maps)

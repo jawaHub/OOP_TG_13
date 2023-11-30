@@ -46,7 +46,7 @@ public class Main {
         }
 
         //und mit map.values() bekommt man die Werte
-        fomap1String value : map.values()) {
+        for(String value : map1.values()) {
             System.out.println(value);
         }
     }
