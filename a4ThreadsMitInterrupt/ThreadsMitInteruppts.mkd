@@ -4,7 +4,7 @@
 1. Man braucht in der Klasse `MeinThread.java` (erbt von Runnable), die Methode interrupt()
 ````java
 public void intrrupt(){}
-``
+````
 2. Diese Klasse ruft die Methode interrupt() auf´
 `````java
 public void interrupt(){
