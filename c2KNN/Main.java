@@ -64,6 +64,6 @@ public class Main {
         return mins;
     }
     private static double distance(DataObjects o, DataObjects ref) {
-        return Math.sqrt(Math.pow(o.getX() - ref.getX(), o.getX() - ref.getX()) + Math.pow(o.getY() - ref.getY(), o.getY() - ref.getY()));
+        return Math.sqrt(Math.pow(o.getX() - ref.getX(),2) + Math.pow(o.getY() - ref.getY(), 2));
     }
 }
