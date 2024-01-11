@@ -52,6 +52,4 @@ public class Cluster {
     public String toString() {
         return "Cluster [mean=" + mean + ", objects=" + objects + ", name=" + name + "]";
     }
-
-    
 }
