@@ -18,6 +18,17 @@ public class Main {
         } while (!isReady);
     }
 
+
+
+
+
+
+
+
+
+
+
+    
     private static void calculateNewMeans() {
         boolean ready = true;
         for (Cluster cluster2 : cluster) {
