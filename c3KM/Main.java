@@ -17,17 +17,6 @@ public class Main {
             System.out.println(cluster);
         } while (!isReady);
     }
-
-
-
-
-
-
-
-
-
-
-
     
     private static void calculateNewMeans() {
         boolean ready = true;
