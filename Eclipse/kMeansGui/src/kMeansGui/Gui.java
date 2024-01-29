@@ -59,6 +59,8 @@ public class Gui extends JFrame implements MouseListener{
 		JButton btLoeschen = new JButton("Löschen");
 		btLoeschen.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				dataPanel.loeschen();
+				dataPanel.repaint();
 			}
 		});
 		btnPanel.add(btLoeschen);
@@ -82,7 +84,7 @@ public class Gui extends JFrame implements MouseListener{
 		JButton btnBerechnen = new JButton("Berechnen");
 		btnBerechnen.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				dataPanel.berechnendaten();
+				dataPanel.start();
 				dataPanel.repaint();
 			}
 		});

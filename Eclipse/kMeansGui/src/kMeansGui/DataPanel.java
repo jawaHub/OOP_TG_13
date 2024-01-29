@@ -8,18 +8,21 @@ import java.util.Random;
 
 import javax.swing.JPanel;
 
-public class DataPanel extends JPanel {
+public class DataPanel extends JPanel implements Runnable {
 	ArrayList<MyCluster> clusters;
 	ArrayList<MyData> allData;
 	int mode;
 	final static int CLUSTER = 1;
 	final static int DATA = 0;
+	int anzahl = 0;
+	Thread t;
 	
 	public DataPanel() {
 		super();
 		clusters = new ArrayList<MyCluster>();
 		mode = DATA;
 		allData = new ArrayList<MyData>();
+		t = new Thread(this);
 	}
 
 	@Override
@@ -32,13 +35,12 @@ public class DataPanel extends JPanel {
 				g.fillOval(mydata.getX(),mydata.getY(), 30, 30);
 			}
 		}
+		g.drawString("anzahl: " + anzahl, 10, 10);
 
 	}
 	
 	public void berechnendaten() {
-		//Konsole löschen
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+		
        
         double delta = 0.0;
         do {
@@ -85,8 +87,21 @@ public class DataPanel extends JPanel {
                 c.setX((int)xNeu);
                 c.setY((int)yNeu);
               }
-
-        } while (delta > 2);
+            
+         
+            try {
+        
+				Thread.sleep(1000);
+				revalidate();
+                repaint();
+                anzahl++;
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            
+            
+            } while (delta > 1);
 
 
         //Ausgabe
@@ -137,5 +152,21 @@ public class DataPanel extends JPanel {
 	public void aktivateData() {
 		mode = DATA;
 		
+	}
+
+	public void loeschen() {
+		allData.clear();
+		clusters.clear();
+		
+	}
+
+	@Override
+	public void run() {
+		berechnendaten();
+		
+	}
+	
+	public void start() {
+		t.start();
 	}
 }
