@@ -1,5 +1,7 @@
 package b2Stacks;
 
+import java.util.Scanner;
+
 public class Queue {
     Element first = null;
 

@@ -1,7 +1,7 @@
 # Queue
 
 ## Merksatz
-In einer Queue, z.B. einer Warteschlange bei einem Drucker, werden die Werte hinten angefügt und vorne entnommen. Es herrst das Prinzip: FiFo -> First in First out. also, die Werte, die zu erst eingefügt werden, werden auc zuerst abgearbeitet.
+In einer Queue, z.B. einer Warteschlange bei einem Drucker, werden die Werte hinten angefügt und vorne entnommen. Es herrscht das Prinzip: FiFo -> First in First out. also, die Werte, die zu erst eingefügt werden, werden auc zuerst abgearbeitet.
 
 ## Klassen
 ### Elements
