@@ -1,0 +1,4 @@
+Device ID: 
+7ffaf641-0b04-4a26-90ad-60317dffe616
+Secret Key:
+WDBMN5MKMAC2PFBOKC6Z

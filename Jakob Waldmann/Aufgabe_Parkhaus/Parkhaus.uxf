@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>14</zoom_level>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>518</x>
+      <y>294</y>
+      <w>238</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Schranke_hoch
+--
+do/ mauf = 1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>882</x>
+      <y>294</y>
+      <w>238</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Schranke_oben
+--
+do/ UN = 0
+do/ Mauf=0, Mab=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>882</x>
+      <y>434</y>
+      <w>238</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Schranke_runter
+-
+do/ mab = 1
+exit/ OB = 0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>518</x>
+      <y>434</y>
+      <w>238</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Schranke_unten
+--
+do/ OB = 0
+do/ Mauf = 0, Mab = 0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>308</x>
+      <y>462</y>
+      <w>28</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>462</y>
+      <w>224</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>518</x>
+      <y>532</y>
+      <w>238</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Eingänge (mit PullUP)
+PE = PB0
+ES = PB1
+LS = PB4
+
+UN = PB6
+OB = PB7
+
+Ausgänge
+Mauf = PC7
+Mab = PC0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>378</y>
+      <w>126</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[PE == 1]</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1022</x>
+      <y>350</y>
+      <w>224</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[ES == 0 &amp;&amp; LS == 0]</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>742</x>
+      <y>280</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[OB == 1]</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>742</x>
+      <y>434</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[UN == 1]</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>742</x>
+      <y>364</y>
+      <w>182</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[LS == 1]</panel_attributes>
+    <additional_attributes>110.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
